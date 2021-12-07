@@ -1,0 +1,376 @@
+/*éliminer les marges automatiques du body*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+/*id background lavande*/
+#lavenderfield {
+    /*image champ de lavande*/
+    background: url(https://imageshack.com/i/poEkylq9j) no-repeat center;
+    /*taille*/
+    padding: 70px;
+    /*couvrir le fond*/
+    background-size: cover;
+}
+/*texte du header*/
+.header {
+    /*taille de la police*/
+    font-size: 20px;
+    /*alligner au centre*/
+    text-align: center;
+    /*couleur*/
+    color: white;
+    /*police*/
+    font-family: Arial;
+}
+/*style liste barre de menu*/
+.menu ul{
+    /*enlever les puces de la liste*/    
+    list-style-type: none;
+    /*supprimer les paramètres par défaut des navigateurs*/
+    margin: 0;
+    padding: 0;
+    /*barre de scrolling activée quand la fenêtre est trop petite*/        
+    overflow: auto;
+    /*couleur de fond du menu*/
+    background-color: #333;
+    /*taille du texte*/
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+    font-family: Arial;
+}
+/*placer les éléments de la liste l'un à côté de l'autre*/
+.menu li {
+    /*rendre les éléments flottant pour les aligner à gauche*/
+    float: left;
+}
+/*liens dans le menu*/
+.menu li a {
+    /*bloc du menu rendu actif en tant que lien*/
+    display: inline-block;
+    /*couleur du texte*/
+    color: white;
+    /*aligner au centre*/
+    text-align: center;
+    /*ajustement des marges NESO*/
+    padding: 14px 16px;
+    /*supprimer le soulignement des liens*/
+    text-decoration: none; 
+}
+/*changement de couleur du bloc quand on passe la souris dessus*/
+.menu li a:hover {
+    background-color: #111;
+}
+
+/*classe pour avoir une couleur spécifique sur un lien choisi du menu*/
+.menu .active{
+    background-color: #AC54AF;
+}
+/*changement de couleur des menus de classe .active quand on passe la souris dessus*/
+.menu .active:hover {
+    background-color: #783A7A;
+}
+
+/*Index*/
+
+.intro{
+    width: 100%;
+    height: 350px;
+    background-color: #524444; 
+}
+#bouquet{
+    display: block;
+    position: static;
+    height: 300px;
+}
+.title1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+.par1 {
+    font-size: 20px;
+    text-align: justify;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    font-family: Arial;
+}
+#champ {
+    background: url(https://imageshack.com/i/pmdsvgWuj) no-repeat center;
+    padding: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#icone {
+    height: 200px;
+}
+
+.objectif{
+    width: 100%;
+    height: 350px;
+    background-color: #F4F0EC; 
+}
+#equipe{
+    display: block;
+    position: static;
+    height: 250px;
+}
+.title2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #524444;
+    font-family: Arial; 
+} 
+.par2 {
+    font-size: 20px;
+    text-align: justify;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #524444;
+    font-family: Arial;
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    height: 200px;
+    /*couleur de fond du menu*/
+    background-color: #333; 
+}
+.footitle{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+.footext{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+.footlink{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#rs{
+    height: 50px;
+}
+
+/*Formulaire*/
+
+/*Fond image table*/
+#decor {
+    /*Image table*/
+    background: url(https://imageshack.com/i/pmgFvLfUj) no-repeat center;
+    /*Espace entre les bords du div et les éléments intérieurs*/
+    padding: 200px;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+.tableform {
+    /*Fond couleur crème avec une baisse d'opacité*/
+    background-color: rgba(244, 240, 236, 0.8);
+    /*Largeur du tableau dans le div*/
+    width: 80%;
+    /*hauteur automatique*/
+    height: auto;
+    /*Centrer le tableau*/
+    margin: auto;
+}
+.formtitle1{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial; 
+    padding: 30px;
+    color: #26221d;
+}
+.formtitle2{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial; 
+    padding: 30px;
+    color: #26221d;
+}
+.formtitle3{
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial;
+    padding: 15px 30px 15px 30px;
+    color: #26221d;
+}
+.formulaire{
+    padding-left:5%;
+    font-size: 15px;
+    text-align: left;
+    color: #26221d;
+    font-family: Arial; 
+    margin-bottom: 15px;
+}
+input[type=submit]{
+    width: 180px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-family: Arial; 
+}
+input[type=reset]{
+    width: 180px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-family: Arial; 
+}
+
+/*Welcome*/
+
+.welcome{
+    /*Fond couleur crème avec une baisse d'opacité*/
+    background-color: rgba(244, 240, 236, 0.8);
+    /*Largeur du tableau dans le div*/
+    width: 80%;
+    /*hauteur automatique*/
+    height: 100px;
+    /*Centrer le tableau*/
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: Arial;
+    color: #26221d;
+    font-weight: bold;
+}
+/* Produits*/
+
+.prod{
+    width: 100%;
+    height: 350px;
+}
+
+.title3 a {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial;
+    color: #524444;
+    text-decoration: none; 
+}
+
+.title3 a:hover {
+    font-size: 30px;
+}
+
+.par3{
+    font-size: 20px;
+    text-align: justify;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: Arial;
+    color: #524444;
+}
+.title4 a {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial;
+    color: #f4f0ec;
+    text-decoration: none; 
+
+}
+
+.title4 a:hover {
+    font-size: 30px;
+}
+
+.par4{
+    font-size: 20px;
+    text-align: justify;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: Arial;
+    color: #f4f0ec;
+}
+#prod{
+    display: block;
+    position: static;
+    height: 300px;
+}
+
+/* Bouquets*/
+
+#bouq{
+    display: block;
+    position: static;
+    height: 400px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+}
+
+/* Demandes personnalisées*/
+
+#dp {
+    background: url(https://imageshack.com/i/poZ9LQZrp) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;    
+    padding: 70px;
+}
+
+#dp h1{
+    text-align: center;
+    font-family: Arial;
+    color: #f4f0ec;   
+    position: sticky;
+}
+
+/*Evénements*/
+
+#fondev{
+    background: url(https://imagizer.imageshack.com/img922/3353/TQCvXq.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;    
+    padding: 70px;
+}
+
+#fondev h1{
+    text-align: center;
+    font-family: Arial;
+    color: #f4f0ec;   
+    position: sticky;
+}
+.tableformev {
+    /*Fond couleur crème avec une baisse d'opacité*/
+    background-color: rgba(244, 240, 236, 0.8);
+    /*Largeur du tableau dans le div*/
+    width: 80%;
+    /*hauteur automatique*/
+    height: auto;
+    /*Centrer le tableau*/
+    margin: auto;
+    margin-top: 50px;
+}
